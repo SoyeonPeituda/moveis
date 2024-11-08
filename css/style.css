@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+.foto {
+    align-self: center;
+}
+
+.foto img {
+    width: 7%;
+    border-radius: 50%;
+    margin-left: 1.5rem;
+}
+
+.trans1 {
+    background-image: url(../img/ct1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.babado {
+    width: 50%;
+}
+
+.babado ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 12vh;
+    margin-right: 1%;
+}
+
+.babado ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+}
+
+.trans {
+    padding: 200px;
+    background-image: url(img/bg.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: 50%;
+    background-size: 100%;
+}
+
+.trans h1 {
+    font-size: 40px;
+    padding-top: 10%;
+
+}
+
+.trans-buttons {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #333;
+}
+
+button {
+    padding: 10px 170px;
+    margin: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.produtos,
+.depoimentor,
+.perguntas,
+.contato {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.depoimentor,
+.perguntas,
+.contato {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.perguntas,
+.contato {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.depoimentor img {
+    border-radius: 50%;
+    width: 30%;
+}
+
+.produto-cis {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.depoimento cis {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.depoimento cis img {
+    width: 50%;
+}
+
+.perguntinhas {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.produtos1 {
+    border: 1px solid #ccc;
+    padding: 20px;
+    flex: 1 1 300px;
+}
+
+.depoimentinhos,
+.nb {
+    border: 1px solid #ccc;
+    padding: 20px;
+    flex: 1 1 300px;
+}
+
+.depoimento {
+    border: 1px solid #ccc
+}
+
+.nb {
+    border: 1px solid #ccc;
+    padding: 20px;
+    flex: 1 1 300px;
+
+}
+
+.contato chama {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 70px;
+    gap: 10px;
+    max-width: 400px;
+    margin-right: 800px;
+    padding: 20px;
+}
+
+.contato .img {
+    position: relative;
+    left: -80px;
+}
+
+.contato {
+    display: flex;
+    height: 460px;
+    justify-content: center;
+    align-items: end;
+}
+
+.imgct img {
+    width: 100%;
+}
+
+.contato input {
+    padding: 10px;
+    font-size: 16px;
+    width: 800px;
+    margin-left: 100px;
+}
+
+.contato textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 800px;
+    margin-left: 100px;
+}
+
+.contato button {
+    padding: 10px;
+    font-size: 16px;
+    margin-left: 100px;
+    width: 800px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+@media(max-width: 768px) {
+
+    body {
+        max-width: 100%;
+    }
+
+    .babado ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produtos-cis,
+    .depoimento cis,
+    .perguntinhas {
+        flex-direction: column;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 480px) {
+
+    .produtos1 img {
+        width: 80%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        padding-left: 50px;
+    }
+
+    body {
+        max-width: 100%;
+    }
+
+    .babado {
+        flex-direction: column;
+    }
+
+    .depoimento {
+        border: 1px solid #ccc
+    }
+
+    .trans {
+        padding: 20px;
+    }
+
+    .trans h1 {
+        font-size: 24px;
+    }
+
+    .trans p {
+        font-size: 16px;
+    }
+
+    .contato h2 {
+        text-align: center;
+        margin-left: 0;
+
+    }
+
+    .contato form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .formimg {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .imgct form .imgct contato {
+        width: 37rem;
+        margin-top: -116px;
+    }
+
+    .contato form input,
+    .contato form textarea {
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+
+    .contato form button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .contato form button:hover {
+        background-color: gray;
+        color: black;
+    }
+}
